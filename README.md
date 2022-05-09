@@ -7,5 +7,5 @@ The main documentation is stored in the `docs` folder and is generated with [Mkd
 ## How to Change the Docs
 
 - Run `pip install -r requirements.txt`
-- Once you finish the editing, run `mkdocs serve` in the `Binance-Chain` directory, then you can 
+- Once you finish the editing, run `mkdocs serve`, then you can 
 preview the site via http://127.0.0.1:8000/. 
