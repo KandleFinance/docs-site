@@ -1,0 +1,26 @@
+/**
+Common customization
+**/
+
+[data-md-color-primary] {
+    --md-typeset-a-color:#F15721 !important;
+    --md-footer-bg-color: rgb(22 27 43 / 84%);
+    --md-footer-bg-color: rgb(30 36 58);
+}
+
+/**
+Dark customization
+**/
+
+[data-md-color-primary=dark-kandle] {
+    --md-primary-fg-color: rgb(22 27 43 / 84%);
+}
+
+
+/**
+Light customization
+**/
+
+[data-md-color-primary=light-kandle] {
+    --md-primary-fg-color: #FFFFFF;
+}
