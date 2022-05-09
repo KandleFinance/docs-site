@@ -1,0 +1,73 @@
+nav:
+  - Home: index.md
+  - Overview: overview.md
+
+site_name: Kandle Platform Docs
+site_description: Kandle Platform Documentation
+site_author: Kandle Platform Community
+copyright: "Copyright © 2022, Maintained by the Kandle Team."
+edit_uri: ""
+use_directory_urls: false
+repo_name: 'KandleFinance/docs-site'
+repo_url: 'https://github.com/KandleFinance/docs-site'
+
+
+theme:
+  name: 'material'
+  # include_search_page: true
+  # search_index_only: true
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  # palette:
+  #   primary: '#F15721'
+  #   # accent: 'grey'
+  logo: assets/images/logo.svg
+
+  features:
+    - toc.follow
+    - content.tabs.link
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+
+extra_css:
+       - assets/stylesheets/dark_theme.css
+       - assets/stylesheets/codehilite.css
+
+markdown_extensions:
+    - admonition
+    - toc
+    - pymdownx.arithmatex
+    - pymdownx.superfences
+    - codehilite
+
+plugins:
+  - search
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-WW50WKY212
+  social:
+    - icon: 'material/web'
+      link: 'https://www.kandle.finance'
+    - icon: 'material/twitter'
+      link: 'https://twitter.com/Kandle'
+    - icon: 'fontawesome/brands/telegram'
+      link: 'https://twitter.com/Kandle'
+    - icon: 'material/github'
+      link: 'https://github.com/KandleFinance'
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
