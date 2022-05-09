@@ -1,6 +1,20 @@
 nav:
   - Home: index.md
-  - Overview: overview.md
+  - How does Kandle work?: 
+    - Highlevel view: howitworks/overview.md
+    - Fees Mechanism: howitworks/fees_mechanism.md
+    - Pool Participation Process: howitworks/pool_participation_process.md
+    - Rewarding Process: howitworks/rewarding_process.md
+    - Burning Process: howitworks/burning_process.md
+    - Fuel Collector: howitworks/fuel_collector.md
+  - Governance Token:
+    - Token Distribution: governance_token/token_distribution.md
+    - Private Sale: governance_token/private_sale.md
+    - Public Sale: governance_token/public_sale.md
+    - Trasury & Liquidity Management: governance_token/treasury_management.md
+  - Roadmap & Perspectives: roadmap.md
+  - Simulations: simulations.md
+  - Market impact: market_impact.md
 
 site_name: Kandle Platform Docs
 site_description: Kandle Platform Documentation
@@ -14,17 +28,25 @@ repo_url: 'https://github.com/KandleFinance/docs-site'
 
 theme:
   name: 'material'
-  # include_search_page: true
-  # search_index_only: true
+  custom_dir: overrides
   language: en
   font:
-    text: Roboto
+    text: Catamaran
     code: Roboto Mono
-  # palette:
-  #   primary: '#F15721'
-  #   # accent: 'grey'
+  palette:
+    - scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+    - scheme: slate 
+      primary: dark-kandle
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
   logo: assets/images/logo.svg
-
   features:
     - toc.follow
     - content.tabs.link
@@ -32,13 +54,15 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+    - navigation.expand
+    - navigation.top
     - search.highlight
     - search.share
     - search.suggest
+    - announce.dismiss
 
 extra_css:
-       - assets/stylesheets/dark_theme.css
-       - assets/stylesheets/codehilite.css
+       - assets/stylesheets/extra.css
 
 markdown_extensions:
     - admonition
@@ -46,6 +70,11 @@ markdown_extensions:
     - pymdownx.arithmatex
     - pymdownx.superfences
     - codehilite
+    - pymdownx.snippets
+    - abbr
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
   - search
@@ -59,15 +88,8 @@ extra:
     - icon: 'material/web'
       link: 'https://www.kandle.finance'
     - icon: 'material/twitter'
-      link: 'https://twitter.com/Kandle'
+      link: 'https://twitter.com/KandleFinance'
     - icon: 'fontawesome/brands/telegram'
-      link: 'https://twitter.com/Kandle'
+      link: 'https://t.me/+Mfeav0KtCOc1Mjk0'
     - icon: 'material/github'
       link: 'https://github.com/KandleFinance'
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
