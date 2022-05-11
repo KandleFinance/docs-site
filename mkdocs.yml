@@ -1,7 +1,7 @@
 nav:
   - Home: index.md
   - How does Kandle work?: 
-    - Highlevel view: howitworks/overview.md
+    - High Level View: howitworks/overview.md
     - Fees Mechanism: howitworks/fees_mechanism.md
     - Pool Participation Process: howitworks/pool_participation_process.md
     - Rewarding Process: howitworks/rewarding_process.md
@@ -12,9 +12,16 @@ nav:
     - Private Sale: governance_token/private_sale.md
     - Public Sale: governance_token/public_sale.md
     - Trasury & Liquidity Management: governance_token/treasury_management.md
-  - Roadmap & Perspectives: roadmap.md
-  - Simulations: simulations.md
+  - Background:
+    - background/index.md
+    - Proof-of-Burn (PoB): background/pob.md
+    - Decentralized Exchange: background/dex.md
+    - BSC vs ETH: background/bsc_vs_eth.md
+  - Roadmap: roadmap.md
+  # - Simulations: simulations.md
   - Market impact: market_impact.md
+  - FAQ: faq.md
+  - Join Us: joinus.md
 
 site_name: Kandle Platform Docs
 site_description: Kandle Platform Documentation
@@ -62,13 +69,24 @@ theme:
     - announce.dismiss
 
 extra_css:
-       - assets/stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 markdown_extensions:
+    - attr_list
     - admonition
-    - toc
+    - def_list
+    - toc:
+        title: On this page
+        permalink: ⚓︎
+    - md_in_html
     - pymdownx.arithmatex
-    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: True
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
     - codehilite
     - pymdownx.snippets
     - abbr
