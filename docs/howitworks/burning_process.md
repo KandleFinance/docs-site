@@ -14,7 +14,25 @@ cryptocurrency world, our algorithms along with a process
 mainly controlled by holders will help prevent or at least
 minimize those risks.
 
-<!-- TODO: Add diagram -->
 
+```mermaid
+flowchart TD
+%% Nodes
+    A((Start))
+    B(Transfer tokens in Burns Collector<br>to easter address)
+    C(Update total tokens supply)
+    D((End))
+
+%% Node links
+    A --> B --> |Burnt tokens are discarded<br>forever| C --> D
+
+%% Defining the styles
+    classDef startStopNode fill:black,stroke-width:1px,stroke:#efefef,color:white
+    classDef yellowStep fill:#ffc542,stroke:#ffce42,color:black
+
+%% Assigning styles to nodes
+    class A,D startStopNode;
+    class C yellowStep;
+```
 
 --8<-- "includes/abbreviations.md"
