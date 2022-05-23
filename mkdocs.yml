@@ -11,7 +11,7 @@ nav:
     - Token Distribution: governance_token/token_distribution.md
     - Private Sale: governance_token/private_sale.md
     - Public Sale: governance_token/public_sale.md
-    - Trasury & Liquidity Management: governance_token/treasury_management.md
+    - Treasury & Liquidity Management: governance_token/treasury_management.md
   - Background:
     - background/index.md
     - Proof-of-Burn (PoB): background/pob.md
