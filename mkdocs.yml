@@ -44,15 +44,7 @@ theme:
     - scheme: default
       primary: white
       accent: deep orange
-      toggle:
-        icon: material/toggle-switch 
-        name: Switch to dark mode
-    - scheme: slate 
-      primary: dark-kandle
-      accent: deep orange
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+
   logo: assets/images/logo.svg
   features:
     - toc.follow

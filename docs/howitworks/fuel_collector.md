@@ -14,6 +14,8 @@ some conditions are met during [the rewarding process](rewarding_process.md).
     The *Staking collector* main role and the staking process will
     be discussed in upcoming versions of the documentation.
 
-<!-- TODO: Add diagram -->
+<figure markdown>
+![Fees Mechanism](/assets/images/fuel_collector.svg "Fuel Collector")
+</figure>
 
 --8<-- "includes/abbreviations.md"

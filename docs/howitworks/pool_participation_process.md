@@ -5,7 +5,9 @@ can reach up to **2x the given amount** :gift:.
 
 The engaged tokens are split into Ashes and Burns using respectively the *Ashes collector* and the *Burns collector*.
 
-<!-- ## // TODO: Add diagram -->
+<figure markdown>
+![Pool Participation Process](/assets/images/pool_participation_process.svg "Pool Participation Process")
+</figure>
 
 At the end of the pool, the ashes will be used to compute the rewards to be shared between Kandlers where as the
 burns will define the number of tokens to be burned and discarded forever from the total supply. The exclusion
@@ -26,7 +28,8 @@ The extra rewards are generally extracted from the *Fuel collector* with a max p
 continuous refuel of rewards in each pool**.
 
 
-<!-- ## // TODO: Add voting process diagram -->
-
+<figure markdown>
+![Voting Process](/assets/images/voting_process.svg "Voting Process")
+</figure>
 
 --8<-- "includes/abbreviations.md"
